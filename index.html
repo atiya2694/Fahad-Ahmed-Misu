@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fahad Ahmed Misu | Web Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">Fahad Ahmed Misu</div>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hero">
+      <img src="images/profile.jpg" alt="Fahad Ahmed Misu" class="profile-img">
+      <h1>Hi, I'm Fahad Ahmed Misu</h1>
+      <p>Creative Website Developer — I build colorful, clean, and responsive experiences that clients love.</p>
+      <a href="#contact" class="btn-primary">Hire Me</a>
+    </div>
+  </header>
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I’m a passionate web developer specializing in modern, visually stunning websites. Every project is an opportunity to create something unique and impactful. Let’s make your next project unforgettable!
+      </p>
+    </section>
+    <section id="skills">
+      <h2>Skills & Services</h2>
+      <div class="skills-grid">
+        <div class="skill-card"><span>💻</span> Frontend (HTML, CSS, JS, React)</div>
+        <div class="skill-card"><span>🎨</span> UI/UX Design</div>
+        <div class="skill-card"><span>⚡</span> Performance Optimization</div>
+        <div class="skill-card"><span>🌐</span> Responsive Design</div>
+        <div class="skill-card"><span>🔒</span> Web Security</div>
+        <div class="skill-card"><span>🛠️</span> Backend (Node.js, PHP, Python)</div>
+      </div>
+    </section>
+    <section id="projects">
+      <h2>My Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <img src="images/project1.jpg" alt="Colorful Landing Page">
+          <h3>Colorful Landing Page</h3>
+          <p>A vibrant and interactive landing page for a startup.</p>
+        </div>
+        <div class="project-card">
+          <img src="images/project2.jpg" alt="E-Commerce Store">
+          <h3>E-Commerce Store</h3>
+          <p>Mobile-first, secure, and user-friendly online store.</p>
+        </div>
+        <div class="project-card">
+          <img src="images/project3.jpg" alt="Portfolio Website">
+          <h3>Portfolio Website</h3>
+          <p>Unique portfolio for a creative professional (like you!).</p>
+        </div>
+      </div>
+    </section>
+    <section id="testimonials">
+      <h2>Testimonials</h2>
+      <div class="testimonial-slider">
+        <div class="testimonial-card active">
+          <img src="images/client1.jpg" alt="Client A" class="testimonial-img">
+          <p>“Fahad exceeded our expectations — stunning design and flawless functionality!”</p>
+          <span>- Client A</span>
+        </div>
+        <div class="testimonial-card">
+          <img src="images/client2.jpg" alt="Client B" class="testimonial-img">
+          <p>“Highly recommended for anyone seeking a unique, responsive website.”</p>
+          <span>- Client B</span>
+        </div>
+        <div class="testimonial-card">
+          <img src="images/client3.jpg" alt="Client C" class="testimonial-img">
+          <p>“Professional, creative, and reliable. Will work with Fahad again!”</p>
+          <span>- Client C</span>
+        </div>
+        <button id="prevTestimonial">‹</button>
+        <button id="nextTestimonial">›</button>
+      </div>
+    </section>
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form id="contactForm">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn-primary">Send Message</button>
+      </form>
+      <div id="formResponse"></div>
+    </section>
+  </main>
+  <footer>
+    <div class="social-links">
+      <a href="#" target="_blank">LinkedIn</a>
+      <a href="#" target="_blank">GitHub</a>
+      <a href="#" target="_blank">Twitter</a>
+    </div>
+    <p>© 2025 Fahad Ahmed Misu. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
