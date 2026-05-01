@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fahad Ahmed Misu - Web Developer & Designer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <img class="logo-image" src="/Asset/logo.png" alt="Fahad Ahmed Misu" onerror="this.style.display='none'; this.parentElement.classList.add('logo-fallback');">
+                
+            </div>
+            <div class="container">
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                <li><a href="#blog" class="nav-link">Blog</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Code That Speaks</h1>
+            <p class="hero-subtitle">I craft elegant web solutions that transform ideas into reality</p>
+            <div class="hero-buttons">
+                <a href="#portfolio" class="btn btn-primary">View Portfolio</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+        </div>
+        <div class="hero-background">
+            <div class="hero-slider" aria-hidden="true">
+                <div class="hero-slide active" style="background-image: url('/Asset/bg1.jpg');"></div>
+                <div class="hero-slide" style="background-image: url('/Asset/bg2.jpg');"></div>
+                <div class="hero-slide" style="background-image: url('/Asset/bg3.jpg');"></div>
+            </div>
+            <div class="hero-controls" aria-hidden="false">
+                <button class="hero-prev" aria-label="Previous slide">‹</button>
+                <button class="hero-next" aria-label="Next slide">›</button>
+            </div>
+            <div class="hero-dots" role="tablist" aria-label="Slide navigation"></div>
+            <div class="glow"></div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">My Portfolio</h2>
+            <p class="section-subtitle">Explore some of my recent web development projects</p>
+
+            <!-- Filter -->
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="web-app">Web Apps</button>
+                <button class="filter-btn" data-filter="e-commerce">E-Commerce</button>
+                <button class="filter-btn" data-filter="corporate">Corporate Sites</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+            </div>
+
+            <!-- Portfolio Grid -->
+            <div class="portfolio-grid">
+                <!-- Project 1 -->
+                <div class="portfolio-item" data-category="web-app">
+                    <div class="portfolio-image">
+                        <img src="/Asset/saas.png" alt="Web App" onerror="this.style.display='none'">
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <h3>SaaS Dashboard</h3>
+                                <p>React • Node.js • MongoDB</p>
+                                <div class="overlay-buttons">
+                                    <a href="#" class="overlay-btn">View Project</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>SaaS Analytics Dashboard</h3>
+                        <p>A comprehensive analytics platform for tracking business metrics in real-time</p>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="portfolio-item" data-category="e-commerce">
+                    <div class="portfolio-image">
+                        <img src="/Asset/ecommerce.jpeg" alt="E-Commerce" onerror="this.style.display='none'">
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <h3>E-Shop Platform</h3>
+                                <p>Next.js • Stripe • PostgreSQL</p>
+                                <div class="overlay-buttons">
+                                    <a href="#" class="overlay-btn">View Project</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Modern E-Commerce Store</h3>
+                        <p>Full-featured online store with payment integration and inventory management</p>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="portfolio-item" data-category="corporate">
+                    <div class="portfolio-image">
+                        <img src="/Asset/Enterprise.jpeg" alt="Corporate" onerror="this.style.display='none'">
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <h3>Corporate Portal</h3>
+                                <p>Vue.js • Tailwind • Firebase</p>
+                                <div class="overlay-buttons">
+                                    <a href="#" class="overlay-btn">View Project</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Enterprise Portal</h3>
+                        <p>Internal communication platform for large enterprise organizations</p>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="portfolio-item" data-category="design">
+                    <div class="portfolio-image">
+                        <img src="/Asset/ui.jpg" alt="Design" onerror="this.style.display='none'">
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <h3>UI Kit Design</h3>
+                                <p>Figma • Component Library</p>
+                                <div class="overlay-buttons">
+                                    <a href="#" class="overlay-btn">View Project</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Complete UI Component Library</h3>
+                        <p>Reusable design system with 200+ components for rapid development</p>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="portfolio-item" data-category="web-app">
+                    <div class="portfolio-image">
+                        <img src="/Asset/social.jpg" alt="Web App" onerror="this.style.display='none'">
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <h3>Social App</h3>
+                                <p>React Native • Firebase</p>
+                                <div class="overlay-buttons">
+                                    <a href="#" class="overlay-btn">View Project</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Social Networking App</h3>
+                        <p>Cross-platform social application with real-time messaging and notifications</p>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="portfolio-item" data-category="e-commerce">
+                    <div class="portfolio-image">
+                        <img src="/Asset/fashion-ecom.jpg" alt="E-Commerce" onerror="this.style.display='none'">
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <h3>Fashion Store</h3>
+                                <p>Vue.js • Shopify API • Tailwind</p>
+                                <div class="overlay-buttons">
+                                    <a href="#" class="overlay-btn">View Project</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Fashion E-Commerce Platform</h3>
+                        <p>Stylish online store for fashion brands with advanced filtering and recommendations</p>
+                    </div>
+                </div>
+
+                <!-- Project 7 -->
+                <div class="portfolio-item" data-category="corporate">
+                    <div class="portfolio-image">
+                        <img src="/Asset/tech.jpg" alt="Corporate" onerror="this.style.display='none'">
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <h3>Startup Website</h3>
+                                <p>Next.js • Headless CMS • SEO</p>
+                                <div class="overlay-buttons">
+                                    <a href="#" class="overlay-btn">View Project</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Tech Startup Website</h3>
+                        <p>Modern marketing website with blog integration and lead generation forms</p>
+                    </div>
+                </div>
+
+                <!-- Project 8 -->
+                <div class="portfolio-item" data-category="design">
+                    <div class="portfolio-image">
+                        <img src="/Asset/Brand.jpg" alt="Design" onerror="this.style.display='none'">
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <h3>Branding Project</h3>
+                                <p>Brand Identity • Design System</p>
+                                <div class="overlay-buttons">
+                                    <a href="#" class="overlay-btn">View Project</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Complete Brand Identity</h3>
+                        <p>Logo design, color palette, and brand guidelines for tech companies</p>
+                    </div>
+                </div>
+
+                <!-- Project 9 -->
+                <div class="portfolio-item" data-category="web-app">
+                    <div class="portfolio-image">
+                        <img src="/Asset/task.jpg" alt="Web App" onerror="this.style.display='none'">
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <h3>Task Manager</h3>
+                                <p>Angular • NestJS • PostgreSQL</p>
+                                <div class="overlay-buttons">
+                                    <a href="#" class="overlay-btn">View Project</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Enterprise Task Manager</h3>
+                        <p>Collaborative project management tool with team collaboration features</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">500+</div>
+                    <div class="stat-label">Projects Completed</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">450+</div>
+                    <div class="stat-label">Happy Clients</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">15+</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Satisfaction Rate</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">My Services</h2>
+            <p class="section-subtitle">What I can help you build</p>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <h3>Web Development</h3>
+                    <p>Full-stack web applications using modern frameworks and technologies</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile Apps</h3>
+                    <p>Cross-platform mobile applications for iOS and Android</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>UI/UX Design</h3>
+                    <p>Beautiful, user-friendly interfaces that convert</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>SEO Optimization</h3>
+                    <p>Search engine optimization for maximum visibility</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cog"></i>
+                    </div>
+                    <h3>Backend Development</h3>
+                    <p>Robust APIs and database architecture</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Support & Maintenance</h3>
+                    <p>Ongoing support and updates for your projects</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Hi! I'm Fahad Ahmed Misu, a passionate web developer and designer with over 5 years of experience creating digital solutions that help businesses grow.</p>
+                    <p>I specialize in building modern, scalable web applications using cutting-edge technologies. My approach combines clean code, intuitive design, and strategic thinking to deliver solutions that exceed expectations.</p>
+                    <p>Whether you're a startup looking to launch your first product or an established company wanting to modernize your digital presence, I'm here to help you succeed.</p>
+
+                    <div class="skills-section">
+                        <h3>Technical Skills</h3>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <span class="skill-name">JavaScript/TypeScript</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 95%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">React & Vue.js</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 92%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Node.js & Backend</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">UI/UX Design</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 88%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-image">
+                    <img src="/Asset/misu.jpg" alt="Fahad Ahmed Misu" onerror="this.style.display='none'">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Client Testimonials</h2>
+            <p class="section-subtitle">What my clients say about working with me</p>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Fahad built our entire e-commerce platform from scratch. His attention to detail and communication throughout the project was exceptional."</p>
+                    <div class="testimonial-author">
+                        <h4>Sarah Johnson</h4>
+                        <p>CEO, Fashion Boutique</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Working with Fahad was a game-changer. He understood our vision and delivered a product that exceeded our expectations."</p>
+                    <div class="testimonial-author">
+                        <h4>Michael Chen</h4>
+                        <p>Founder, Tech Startup</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Professional, reliable, and incredibly talented. Fahad delivered our project on time and within budget. Highly recommended!"</p>
+                    <div class="testimonial-author">
+                        <h4>Emma Williams</h4>
+                        <p>Project Manager, Digital Agency</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"The SaaS dashboard Fahad built for us has been revolutionary. Our productivity increased by 40%. Excellent work!"</p>
+                    <div class="testimonial-author">
+                        <h4>David Martinez</h4>
+                        <p>Operations Director, SaaS Company</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog">
+        <div class="container">
+            <h2 class="section-title">Latest Blog Posts</h2>
+            <p class="section-subtitle">Insights and tips from my experience</p>
+
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="/Asset/node.jpg" alt="Blog" onerror="this.style.display='none'">
+                    </div>
+                    <div class="blog-content">
+                        
+                        <h3>Building Scalable Web Applications with React</h3>
+                        <p>Learn best practices for building large-scale React applications that can handle millions of users.</p>
+                        
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="/Asset/2026.jpg" alt="Blog" onerror="this.style.display='none'">
+                    </div>
+                    <div class="blog-content">
+                        
+                        <h3>The Future of Web Development in 2026</h3>
+                        <p>Exploring emerging trends and technologies that will shape the web development industry.</p>
+                        
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="/Asset/css.jpg" alt="Blog" onerror="this.style.display='none'">
+                    </div>
+                    <div class="blog-content">
+                        
+                        <h3>Mastering CSS Grid and Flexbox</h3>
+                        <p>A comprehensive guide to modern CSS layout techniques for responsive design.</p>
+                        
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Let's work together on your next project</p>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+880 1718 580058</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>misuxn@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Dhaka, Bangladesh</p>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-dribbble"></i></a>
+                    </div>
+
+                    <a class="whatsapp-btn" href="https://api.whatsapp.com/send?phone=8801601939549&text=Hello%20Fahad,%20I%20would%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-whatsapp"></i>
+                        Chat on WhatsApp
+                    </a>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" name="user_name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="user_email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <select name="service" required>
+                            <option value="">Select Service</option>
+                            <option value="web">Web Development</option>
+                            <option value="mobile">Mobile Apps</option>
+                            <option value="design">UI/UX Design</option>
+                            <option value="seo">SEO Optimization</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-branding">
+                        <img class="footer-logo" src="/Asset/logo.png" alt="Fahad Ahmed Misu" onerror="this.style.display='none'; this.parentElement.classList.add('logo-fallback');">
+                        <p>Creative web developer and designer specializing in modern, scalable digital solutions for businesses of all sizes.</p>
+                    </div>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-icon" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-icon" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon" title="Dribbble"><i class="fab fa-dribbble"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">UI/UX Design</a></li>
+                        <li><a href="#">Mobile Apps</a></li>
+                        <li><a href="#">Consulting</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Contact Me</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Fahad Ahmed Misu. All rights reserved. | Made with <i class="fas fa-heart" style="color: #ff6b6b;"></i> by Fahad</p>
+                <div class="footer-bottom-links">
+                    <a href="privacy.html">Privacy</a>
+                    <a href="terms.html">Terms</a>
+                    <a href="sitemap.html">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a class="floating-whatsapp" href="https://api.whatsapp.com/send?phone=8801601939549&text=Hello%20Fahad,%20I%20would%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span>WhatsApp</span>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
